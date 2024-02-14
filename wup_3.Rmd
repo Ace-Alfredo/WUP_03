@@ -61,4 +61,4 @@ plot(TukeyHSD(model1))
    
 ## Conclusions
 
-
+Now that all the code has been added. we can see that in the end more students who sit in the back of the classroom more most likely not only drinking. but are drinking the most when it comes to consuming alcohol. It shows that students who sit in the front also drink a little less then the ones who sit in the middle, but its not as a huge difference to the ones in the back. Maybe it wont be a bright idea asking the students who sit in the back to help with homework.
