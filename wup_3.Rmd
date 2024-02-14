@@ -27,8 +27,9 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```{r}
 basicCN + geom_boxplot()
 ```
-  
-  
+   
+  More students sit in the back seat are more likely have consumed alcohol, then how most do in the middle or front seat. It also shows how much is consumed.    
+    
 ### get fancy  
 
 ```{r}
@@ -37,6 +38,12 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 
 ## Numerical Summarys 
 
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+  
+   The numerical graph shows how many times the class drinks a week and where they sit in the classroom. shows the front having only an average of inbetween one or two drinks. The ones who sit in the middle drinking an average of three to four drinks. and the average number of drinks for someone who sits in the back is about eight to nine drinks.
+  
 ## Inferential Tests
 
 ## Conclusions
