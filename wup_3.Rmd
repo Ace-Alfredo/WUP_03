@@ -42,10 +42,23 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 favstats(alcohol~Seat,data=ucdavis1)
 ```
   
-   The numerical graph shows how many times the class drinks a week and where they sit in the classroom. shows the front having only an average of inbetween one or two drinks. The ones who sit in the middle drinking an average of three to four drinks. and the average number of drinks for someone who sits in the back is about eight to nine drinks.
+   The numerical graph shows how many times the class drinks a week and where they sit in the classroom. shows the front having only an average of in between one or two drinks. The ones who sit in the middle drinking an average of three to four drinks. and the average number of drinks for someone who sits in the back is about eight to nine drinks.
   
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+  
+This is the graph that shows the significant results.  
+
+```{r}
+plot(TukeyHSD(model1))
+```
+  
+  This graph shows the difference between how much someone are drinking in the front, back, and the middle. It shows the difference between the front to back, middle to back, and finally middle to dront. It shows that there many people who sit in the back drink more then anyone that sits anywhere else. Also Middle and front show almost no difference.
+   
 ## Conclusions
 
 
